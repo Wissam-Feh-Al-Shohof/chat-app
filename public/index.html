@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/socket.mjs" defer></script>
+    <script type="module" src="/app.mjs" defer></script>
     <link rel="stylesheet" href="/styles.css">
     <title>Document</title>
 </head>
 <body>
-   <div class="container">
-    <div class="messages-container">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum quibusdam maxime quo. Ratione blanditiis exercitationem neque aperiam debitis ducimus illum quasi sint? Tempora debitis similique veritatis, provident sequi expedita?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum quibusdam maxime quo. Ratione blanditiis exercitationem neque aperiam debitis ducimus illum quasi sint? Tempora debitis similique veritatis, provident sequi expedita?</p>
+   <div id="mario-chat">
+    <div id="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
     </div>
-    <input class="text-input">
-        <button class="send-button">send</button>
-    </input>
    </div>
-    
+    <input type="text" id="handle" placeholder="handle">
+    <input type="text" id="message" placeholder="message">
+    <button id="send">Send</button>
 </body>
 </html>
